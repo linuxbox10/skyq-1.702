@@ -1,0 +1,36 @@
+cd /
+echo "Checking for an older versions"
+if [ -d /usr/share/enigma2/SkyQ ]
+then
+rm -rf /usr/share/enigma2/SkyQ > /dev/null 2>&1
+rm -rf /usr/script/SkyQScrape.sh > /dev/null 2>&1
+rm -rf /usr/script/SkyQPicks.sh > /dev/null 2>&1
+rm -rf /usr/script/ChabsScrape.sh > /dev/null 2>&1
+rm -rf /usr/script/scrapes > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/ChabsSkyQSelector > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/ChabsSkins > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyClockToText.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyClockToText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyEventName.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyEventName.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyMovieReference.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyMovieReference.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyServicePosition.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SkyServicePosition.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/d2NextEvents.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/d2NextEvents.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyNextEvents.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyNextEvents.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyNextEventsTime.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyNextEventsTime.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyRunningText.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyRunningText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyPicon.py > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SkyPicon.pyo > /dev/null 2>&1
+echo "An older version was found and removed"
+echo "Proceeding to installation..."
+else
+echo "No existing version was found on the system"
+echo "Proceeding to installation..."
+fi
+exit 0
