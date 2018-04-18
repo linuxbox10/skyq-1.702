@@ -1,0 +1,5 @@
+#!/bin/sh
+cd /
+python '/usr/share/enigma2/skyQ/cronsetup.pyo'
+python '/usr/share/enigma2/skyQ/toppicks.pyo'
+exit 0
